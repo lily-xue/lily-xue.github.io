@@ -4,23 +4,38 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>我的github pages搭建过程（一） | Hexo</title>
+  <title>我的github-pages搭建过程（二） | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="从第一天开始接收到任务起，我就开始在搭建个人博客，在短短的半个月时间内，有至少6个晚上搭建博客到后半夜2点，心力交瘁。各种折腾各种自坑，在今天终于搭建好了，现在将相关教程和注意事项写下来，希望能够帮助到正在挣扎的你。
-  在搭建主页的过程中，我在网上搜索了很多教程基本上是小白式教程，没有写明每一步的原因，有时候漏掉一个步骤或者按照自己理解来做的时候———我管这个叫“自坑”，很可能会得到一个错误">
+  <meta name="description" content="切换hexo主题 and 绑定注册域名
+切换hexo主题
+
+博客有了，也可以正常使用，但是默认的主题似乎太普通，想要一个自己喜欢的博客主题，可以去搜索并下载下来，我使用的是yilia主题。
+1.首先在博客根目录运行git clone https://github.com/litten/hexo-theme-yilia themes/hexo-theme-yilia
+或者直接将该主题下载下来，放到博">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的github pages搭建过程（一）">
-<meta property="og:url" content="https://lily-xue.github.io/2016/08/16/我的github-pages搭建过程/index.html">
+<meta property="og:title" content="我的github-pages搭建过程（二）">
+<meta property="og:url" content="https://lily-xue.github.io/2016/08/17/我的github-pages搭建过程（二）/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="从第一天开始接收到任务起，我就开始在搭建个人博客，在短短的半个月时间内，有至少6个晚上搭建博客到后半夜2点，心力交瘁。各种折腾各种自坑，在今天终于搭建好了，现在将相关教程和注意事项写下来，希望能够帮助到正在挣扎的你。
-  在搭建主页的过程中，我在网上搜索了很多教程基本上是小白式教程，没有写明每一步的原因，有时候漏掉一个步骤或者按照自己理解来做的时候———我管这个叫“自坑”，很可能会得到一个错误">
-<meta property="og:image" content="http://lily-xue.github.io/img/config.png">
-<meta property="og:updated_time" content="2016-08-16T16:18:01.532Z">
+<meta property="og:description" content="切换hexo主题 and 绑定注册域名
+切换hexo主题
+
+博客有了，也可以正常使用，但是默认的主题似乎太普通，想要一个自己喜欢的博客主题，可以去搜索并下载下来，我使用的是yilia主题。
+1.首先在博客根目录运行git clone https://github.com/litten/hexo-theme-yilia themes/hexo-theme-yilia
+或者直接将该主题下载下来，放到博">
+<meta property="og:image" content="http://lily-xue.github.io/img/ip.png">
+<meta property="og:image" content="http://lily-xue.github.io/img/dns.png">
+<meta property="og:image" content="http://lily-xue.github.io/img/new-dns.png">
+<meta property="og:image" content="http://lily-xue.github.io/img/new.png">
+<meta property="og:updated_time" content="2016-08-16T17:05:00.873Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的github pages搭建过程（一）">
-<meta name="twitter:description" content="从第一天开始接收到任务起，我就开始在搭建个人博客，在短短的半个月时间内，有至少6个晚上搭建博客到后半夜2点，心力交瘁。各种折腾各种自坑，在今天终于搭建好了，现在将相关教程和注意事项写下来，希望能够帮助到正在挣扎的你。
-  在搭建主页的过程中，我在网上搜索了很多教程基本上是小白式教程，没有写明每一步的原因，有时候漏掉一个步骤或者按照自己理解来做的时候———我管这个叫“自坑”，很可能会得到一个错误">
-<meta name="twitter:image" content="http://lily-xue.github.io/img/config.png">
+<meta name="twitter:title" content="我的github-pages搭建过程（二）">
+<meta name="twitter:description" content="切换hexo主题 and 绑定注册域名
+切换hexo主题
+
+博客有了，也可以正常使用，但是默认的主题似乎太普通，想要一个自己喜欢的博客主题，可以去搜索并下载下来，我使用的是yilia主题。
+1.首先在博客根目录运行git clone https://github.com/litten/hexo-theme-yilia themes/hexo-theme-yilia
+或者直接将该主题下载下来，放到博">
+<meta name="twitter:image" content="http://lily-xue.github.io/img/ip.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -206,11 +221,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-我的github-pages搭建过程" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-我的github-pages搭建过程（二）" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/08/16/我的github-pages搭建过程/" class="article-date">
-  	<time datetime="2016-08-16T14:41:38.000Z" itemprop="datePublished">2016-08-16</time>
+      <a href="/2016/08/17/我的github-pages搭建过程（二）/" class="article-date">
+  	<time datetime="2016-08-16T16:17:12.000Z" itemprop="datePublished">2016-08-17</time>
 </a>
     </div>
   
@@ -223,7 +238,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      我的github pages搭建过程（一）
+      我的github-pages搭建过程（二）
     </h1>
   
 
@@ -243,19 +258,26 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>  从第一天开始接收到任务起，我就开始在搭建个人博客，在短短的半个月时间内，有至少6个晚上搭建博客到后半夜2点，心力交瘁。各种折腾各种自坑，在今天终于搭建好了，现在将相关教程和注意事项写下来，希望能够帮助到正在挣扎的你。</p>
-<p>  在搭建主页的过程中，我在网上搜索了很多教程基本上是小白式教程，没有写明每一步的原因，有时候漏掉一个步骤或者按照自己理解来做的时候———我管这个叫“自坑”，很可能会得到一个错误的结果。我反复看了教程好多遍才理解每一步的操作应该是怎么样的。自学者遇到的最大困难，就是明明看到胜利就在前方，缺少一个点破迷津的人，自己在不断挣扎，学习、吸取教训。</p>
-  <a id="more"></a>
-<h3 id="hexo安装与github安装-and-个人博客部署到github"><a href="#hexo安装与github安装-and-个人博客部署到github" class="headerlink" title="hexo安装与github安装 and 个人博客部署到github"></a>hexo安装与github安装 and 个人博客部署到github</h3><p>我这个教程是基于window系统用户，Hexo3版本。<br>下面的这个教程涵盖了hexo安装和git注册建立仓库等操作，我就不一一描述。建议先按照这个教程安装一下，如果遇到问题再来看我这里是否有相关说明和解惑。<br><a href="http://www.jianshu.com/p/ba76165ca84d" target="_blank" rel="external">hexo干货系列：（一）hexo+gitHub搭建个人独立博客</a></p>
-<p>1._config.yml中的aploy是将博客推送到github上的重要配置，如果这个字段错误，执行hexo d的时候会出错。</p>
-<p>2._config.yml中的url字段配置为自己的github pages主页地址，比如我的是<a href="https://lily-xue.github.io">https://lily-xue.github.io</a></p>
-<p>3.aploy配置的冒号后面有空格，type等字段前面也是有空格的，如果不正确会报错ERROR Deployer not found : github</p>
-<p><img src="http://lily-xue.github.io/img/config.png" alt="alt text"></p>
-<p>4.在本地预览博客是否可以运行，然后使用hexo g生成静态文件，使用hexo d命令将博客推送到github。如果不生成静态文件，在git上就无法访问，出现404的报错了。</p>
-<p>5.从始至终，是不需要使用git命令将这个hexo目录推送到github上的！</p>
-<p>从始至终，是不需要使用git命令将这个hexo目录推送到github上的！</p>
-<p>只需四步走：新建博客(hexo new “title”)，使用编辑source/_posts/下生成的新博客，生成静态文件(hexo g),推送到githug(hexo d)。</p>
-<p>然后就可以看到自己新写的博客在github主页上显示了~</p>
+        <h3 id="切换hexo主题-and-绑定注册域名"><a href="#切换hexo主题-and-绑定注册域名" class="headerlink" title="切换hexo主题 and 绑定注册域名"></a>切换hexo主题 and 绑定注册域名</h3><ul>
+<li>切换hexo主题</li>
+</ul>
+<p>博客有了，也可以正常使用，但是默认的主题似乎太普通，想要一个自己喜欢的博客主题，可以去搜索并下载下来，我使用的是<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">yilia主题</a>。</p>
+<p>1.首先在博客根目录运行git clone <a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">https://github.com/litten/hexo-theme-yilia</a> themes/hexo-theme-yilia</p>
+<p>或者直接将该主题下载下来，放到博客的themes目录下</p>
+<p>2.然后修改_config.yml中的theme字段为hexo-theme-yilia，同样要注意冒号后面的空格符。</p>
+<p>3.执行hexo g生成静态文件，可以在本地运行hexo s查看效果。执行hexo d将主题推送到github,等一分钟就可以看到新的主题了。</p>
+<ul>
+<li>绑定域名</li>
+</ul>
+<p>每次访问博客都要填写<a href="https://xx.github.io是否觉得不够炫酷。" target="_blank" rel="external">https://xx.github.io是否觉得不够炫酷。</a><br>注册一个属于自己的域名，就可以通过注册的新域名访问自己的博客了。我是在万网上注册的，一般都不是很贵。</p>
+<p>1.首先选一个没有被注册的域名，然后购买，购买之后要设置一下域名解析。（域名解析就是将IP地址与域名联系起来。我们访问百度的时候，都会输入www.baidu.com,而不会去访问14.215.177.37。我们在访问www.baidu.com的时候，网络会先去询问一个叫域名服务器的东西：“www.baidu.com的IP地址是多少呢？”这个时候，服务器告诉它：“14.215.177.37”，然后我们的电脑就去请求14.215.177.37的数据来达到访问百度的目的了。）如果不设置域名解析，那么访问新注册的域名就无法查看自己的博客了。</p>
+<p>2.先查看自己博客的IP地址，window可以在cmd中运行ping  xxx.github.io,图中的 151.101.16.133就是解析出来的IP地址</p>
+<p><img src="http://lily-xue.github.io/img/ip.png" alt="alt text"></p>
+<p>3.设置域名解析将IP地址与新域名联系起来，一般域名注册服务都支持设置域名解析，我是在万网上设置的，按照下面的方式配置。</p>
+<p><img src="http://lily-xue.github.io/img/dns.png" alt="alt text"></p>
+<p>4.等待3-5分钟后，再次在cmd中ping 新注册的的域名,IP地址和设置的一致，就说明成功了<br><img src="http://lily-xue.github.io/img/new-dns.png" alt="alt text"></p>
+<p>5.在博客source/_posts/目录下添加一个叫CNAME不带后缀的文件,写上新注册的域名。运行hexo g -g推送到git,2分钟后，就可以使用新的域名访问自己的博客了。</p>
+<p><img src="http://lily-xue.github.io/img/new.png" alt="alt text"></p>
 
       
     </div>
@@ -265,18 +287,9 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/08/17/我的github-pages搭建过程（二）/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          我的github-pages搭建过程（二）
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/08/16/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2016/08/16/我的github-pages搭建过程/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">我的github pages搭建过程（一）</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -311,7 +324,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="我的github-pages搭建过程" data-title="我的github pages搭建过程（一）" data-url="https://lily-xue.github.io/2016/08/16/我的github-pages搭建过程/"></div>
+	<div class="ds-thread" data-thread-key="我的github-pages搭建过程（二）" data-title="我的github-pages搭建过程（二）" data-url="https://lily-xue.github.io/2016/08/17/我的github-pages搭建过程（二）/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
