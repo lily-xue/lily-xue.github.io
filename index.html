@@ -4,19 +4,19 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Hexo</title>
+  <title>lilyxue的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="不言弃,fight!">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="lilyxue的个人博客">
 <meta property="og:url" content="https://lily-xue.github.io/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="lilyxue的个人博客">
 <meta property="og:description" content="不言弃,fight!">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="lilyxue的个人博客">
 <meta name="twitter:description" content="不言弃,fight!">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="lilyxue的个人博客" type="application/atom+xml">
   
   
     <link rel="icon" href="//favicon.png">
@@ -37,7 +37,7 @@
 		</a>
 
 		<hgroup>
-		  <h1 class="header-author"><a href="/">lily-xue</a></h1>
+		  <h1 class="header-author"><a href="/">lilyxue</a></h1>
 		</hgroup>
 
 		
@@ -79,7 +79,7 @@
 						<li>Links</li>
 						
 						
-						<li>Über</li>
+						<li>About</li>
 						
 					</ul>
 				</div>
@@ -158,7 +158,7 @@
       <nav id="mobile-nav">
   	<div class="overlay">
   		<div class="slider-trigger"></div>
-  		<h1 class="header-author js-mobile-header hide">lily-xue</h1>
+  		<h1 class="header-author js-mobile-header hide">lilyxue</h1>
   	</div>
 	<div class="intrude-less">
 		<header id="header" class="inner">
@@ -168,7 +168,7 @@
 				
 			</div>
 			<hgroup>
-			  <h1 class="header-author">lily-xue</h1>
+			  <h1 class="header-author">lilyxue</h1>
 			</hgroup>
 			
 			<p class="header-subtitle">记录自己学习的点点滴滴</p>
@@ -201,6 +201,72 @@
 </nav>
 
       <div class="body-wrap">
+  
+    <article id="post-rails-学习笔记（一）" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/08/18/rails-学习笔记（一）/" class="article-date">
+  	<time datetime="2016-08-18T14:32:25.000Z" itemprop="datePublished">2016-08-18</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/08/18/rails-学习笔记（一）/">rails 学习笔记（一）</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>rails学习了几天，很多内容比以前更加清晰，</p>
+<ul>
+<li>创建用户资源rails g model user username:string password_digest:string</li>
+<li>创建控制器rails g controller users new create</li>
+<li>使用脚手架创建模块和框架 rails g scaffold todo</li>
+<li>使用gem bcrypt加密密码</li>
+<li>登录功能使用session控制器，以下为对应的路由<ul>
+<li>get ‘/login’, to: ‘sessions#new’           # 获取登录表由</li>
+<li>post ‘/login’, to: ‘sessions#create’       # 登录路由</li>
+<li>delete ‘/logout’, to: ‘sessions#destroy’   # 登出路由</li>
+</ul>
+</li>
+<li>将user与todo关联rails g migration AddUserToTodos user:references（user_id:references 是说把 user_id 作为外键添加到 todo 表结构中）</li>
+</ul>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-写作与编程的相似之处" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -454,7 +520,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2016 lily-xue
+    		&copy; 2016 lilyxue
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
