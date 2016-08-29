@@ -12,7 +12,7 @@
 <meta property="og:url" content="https://lily-xue.github.io/2016/08/29/Rails学习之carrierwave图片上传/index.html">
 <meta property="og:site_name" content="lilyxue的个人博客">
 <meta property="og:description" content="carrierwave是一个用来上传图片的gem，我们可以在github查看相关介绍。接下来讲解一下怎么使用carrierwave简单实现图片上传功能。">
-<meta property="og:updated_time" content="2016-08-29T15:28:20.255Z">
+<meta property="og:updated_time" content="2016-08-29T15:32:35.383Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Rails学习之carrierwave图片上传">
 <meta name="twitter:description" content="carrierwave是一个用来上传图片的gem，我们可以在github查看相关介绍。接下来讲解一下怎么使用carrierwave简单实现图片上传功能。">
@@ -247,7 +247,7 @@
 <p>10.在app/controllers/users_controller.rb中添加show动作<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">def show</div><div class="line">  @user = User.find(params[:id])</div><div class="line">end</div></pre></td></tr></table></figure></p>
 <p>11.在app/views/users/下添加show.html.erb，作为显示 user的view文件,内容为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;h1&gt;用户&lt;/h1&gt;</div><div class="line">&lt;%= render &apos;user&apos; %&gt;</div></pre></td></tr></table></figure></p>
 <p>12.添加在app/views/users/下添加_user.html.erb显示用户头像，内容为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;p&gt;&lt;%= @user.username %&gt;&lt;/p&gt;</div><div class="line">&lt;p&gt;&lt;%= image_tag(@user.avatar_url(:large)) if @user.avatar %&gt;&lt;/p&gt;</div></pre></td></tr></table></figure></p>
-<p>13.现在就可以试试了，访问<a href="http://localhost:3000/users/new可以看到注册用户和上传图片的页面了，访问http://localhost:3000/users/id可以查看用户的头像和姓名" target="_blank" rel="external">http://localhost:3000/users/new可以看到注册用户和上传图片的页面了，访问http://localhost:3000/users/id可以查看用户的头像和姓名</a></p>
+<p>13.现在就可以试试了，访问localhost:3000/users/new可以看到注册用户和上传图片的页面了，访问localhost:3000/users/id可以查看用户的头像和姓名</p>
 
       
     </div>
