@@ -4,20 +4,21 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>ruby on rails tutorial学习之github常用命令 | lilyxue的个人博客</title>
+  <title>CGC初学者debug心得 | lilyxue的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="github使用时常用的一些命令在开发rails的过程中，经常会需要用到github管理自己的代码，学习git的一些常用命令，可以让我们更加高效地进行开发。">
+  <meta name="description" content="CGC心得在深圳首期CGC训练营中，紧张充实的六周一晃而过，有时候对一个难题冥思苦想，有时候因为解决一个问题欣喜若狂，心情会随着这些代码而起起伏伏。总的来说，CGC帮助我开启了ruby on rails的大门。
+在CGC活动中，学习的自主性和独立思考是非常重要的，我们每周拿出15小时左右的时间来学习。在学习中遇到什么问题，可以先自己去网上找答案，如果找不到答案可以大家一起讨论。授人以鱼不如授人以渔">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ruby on rails tutorial学习之github常用命令">
-<meta property="og:url" content="https://lily-xue.github.io/2016/08/30/ruby on rails tutorial学习之github常用命令/index.html">
+<meta property="og:title" content="CGC初学者debug心得">
+<meta property="og:url" content="https://lily-xue.github.io/2016/09/28/CGC初学者debug心得/index.html">
 <meta property="og:site_name" content="lilyxue的个人博客">
-<meta property="og:description" content="github使用时常用的一些命令在开发rails的过程中，经常会需要用到github管理自己的代码，学习git的一些常用命令，可以让我们更加高效地进行开发。">
-<meta property="og:image" content="http://lily-xue.github.io/img/tobranch.png">
-<meta property="og:updated_time" content="2016-08-30T13:16:42.894Z">
+<meta property="og:description" content="CGC心得在深圳首期CGC训练营中，紧张充实的六周一晃而过，有时候对一个难题冥思苦想，有时候因为解决一个问题欣喜若狂，心情会随着这些代码而起起伏伏。总的来说，CGC帮助我开启了ruby on rails的大门。
+在CGC活动中，学习的自主性和独立思考是非常重要的，我们每周拿出15小时左右的时间来学习。在学习中遇到什么问题，可以先自己去网上找答案，如果找不到答案可以大家一起讨论。授人以鱼不如授人以渔">
+<meta property="og:updated_time" content="2016-09-27T16:22:18.634Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ruby on rails tutorial学习之github常用命令">
-<meta name="twitter:description" content="github使用时常用的一些命令在开发rails的过程中，经常会需要用到github管理自己的代码，学习git的一些常用命令，可以让我们更加高效地进行开发。">
-<meta name="twitter:image" content="http://lily-xue.github.io/img/tobranch.png">
+<meta name="twitter:title" content="CGC初学者debug心得">
+<meta name="twitter:description" content="CGC心得在深圳首期CGC训练营中，紧张充实的六周一晃而过，有时候对一个难题冥思苦想，有时候因为解决一个问题欣喜若狂，心情会随着这些代码而起起伏伏。总的来说，CGC帮助我开启了ruby on rails的大门。
+在CGC活动中，学习的自主性和独立思考是非常重要的，我们每周拿出15小时左右的时间来学习。在学习中遇到什么问题，可以先自己去网上找答案，如果找不到答案可以大家一起讨论。授人以鱼不如授人以渔">
   
     <link rel="alternative" href="/atom.xml" title="lilyxue的个人博客" type="application/atom+xml">
   
@@ -203,11 +204,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-ruby on rails tutorial学习之github常用命令" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-CGC初学者debug心得" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/08/30/ruby on rails tutorial学习之github常用命令/" class="article-date">
-  	<time datetime="2016-08-30T14:32:25.000Z" itemprop="datePublished">2016-08-30</time>
+      <a href="/2016/09/28/CGC初学者debug心得/" class="article-date">
+  	<time datetime="2016-09-27T16:21:44.000Z" itemprop="datePublished">2016-09-28</time>
 </a>
     </div>
   
@@ -220,7 +221,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      ruby on rails tutorial学习之github常用命令
+      CGC初学者debug心得
     </h1>
   
 
@@ -236,45 +237,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="github使用时常用的一些命令"><a href="#github使用时常用的一些命令" class="headerlink" title="github使用时常用的一些命令"></a>github使用时常用的一些命令</h3><p>在开发rails的过程中，经常会需要用到github管理自己的代码，学习git的一些常用命令，可以让我们更加高效地进行开发。</p>
-<a id="more"></a>
-<p>1.首次安装git需要进行的系统设置</p>
-<p><code>git config –global user.name “your username”</code></p>
-<p><code>git config –global user.email “your email”</code></p>
-<p>2.然后运行git init进行仓库初始化，git默认跟踪所有文件的变化，但是在根目录下的.gitignore文件中记录的是git不需要跟踪的文件和目录。</p>
-<p>3.git的主要命令：</p>
+        <h4 id="CGC心得"><a href="#CGC心得" class="headerlink" title="CGC心得"></a>CGC心得</h4><p>在深圳首期CGC训练营中，紧张充实的六周一晃而过，有时候对一个难题冥思苦想，有时候因为解决一个问题欣喜若狂，心情会随着这些代码而起起伏伏。总的来说，CGC帮助我开启了ruby on rails的大门。</p>
+<p>在CGC活动中，学习的自主性和独立思考是非常重要的，我们每周拿出15小时左右的时间来学习。在学习中遇到什么问题，可以先自己去网上找答案，如果找不到答案可以大家一起讨论。授人以鱼不如授人以渔，解决一个问题不难，重要的是学习怎么去解决一个问。在训练营中，除了ruby on rails知识的学习，我个人另外学到的是遇到问题的解决办。由于大部分时间都是在自己看书或者coding，遇到问题没有办法找人求助，那就只好先自己琢磨一下了，我总结了一下自己遇到的问题时的处理办法。</p>
 <ul>
-<li><p>git add . #将当前目录及其子目录下，所有改动且未提交的文件添加到git暂存区域中</p>
-</li>
-<li><p>git status #查看暂存区有哪些文件</p>
-</li>
-<li><p>git commit -m “your comment” #告知git保存改动（本地更改）</p>
-</li>
-<li><p>git push #将更改提交到远程仓库</p>
-</li>
-<li><p>git log #查看提交的历史信息</p>
-</li>
-<li><p>git checkout -f #切换到上一个提交记录来撤销本次改动</p>
-</li>
-<li><p>git remote add origin &lt;远程仓库地址&gt; #告知git添加仓库地址为代码的原本，代表本地的主分支</p>
-</li>
-<li><p>git push -u origin master #将本地仓库推送到github上</p>
-</li>
-<li><p>git checkout -b <branch-name> #新增一个分支，并切换到这个分支<br><img src="http://lily-xue.github.io/img/tobranch.png" alt="checkout branch"></branch-name></p>
-</li>
-<li><p>git branch #查看所有分支</p>
-</li>
-<li><p>git checkout master #切换到主分支</p>
-</li>
-<li><p>git merge <branch-name> #将<branch-name>这个分支的改动合并到主分支</branch-name></branch-name></p>
-</li>
-<li><p>git branch -d <branch-name>  #将<branch-name>这个分支删除</branch-name></branch-name></p>
-</li>
-<li><p>git checkout -D <branch-name> #放弃对从分支做的修改</branch-name></p>
-</li>
-<li><p>git push #将改动推送到github</p>
-</li>
+<li>查看报错的信息，查看是哪一行出了问题，然后对应出错的地方进行分析。</li>
 </ul>
+<p>1.先对比资料的代码和自己的代码，查看自己代码是否有错误和遗漏（刚开始学习的时候经常出现这类问题，因为对代码含义了解不够透彻，只是单纯地照抄）</p>
+<p>2.如果不是代码”抄写”出现问题，则需要自己去理解代码的含义了，结合出错的提示，进而找到问题的所在。</p>
+<p>3.如果上面两种办法都不能解决问题，就去百度或者谷歌错误信息，对于一些常见的问题，各大论坛和网站都会有类似的提问，我们只需要去查看答案就行。ruby的相关问题，国内相对来说比较少，如果百度找不到答案，建议用谷歌。个人来说，对于一些网上没有信息的“诡异”问题，基本上是因为自己环境或者粗心大意造成的。</p>
+<p>有时候，同一个问题，网上的答案有好多个版本，怎么甄别正确的答案呢，那就是多看几个类似的回答，对比选择出现频率最高的方法~~</p>
+<p>4.重启服务器，有些配置是需要在rails启动时读取的，重启服务器能够让修改的配置加载生效。</p>
+<p>5.休息一会再战，经历了上面的一番折腾，人已经筋疲力尽，心情也比较郁闷了，最好的办法是休息一段时间，放松一下心情。有一次折腾了半天解决不了的一个问题，休息一天后，半个小时就找到问题所在了。</p>
+<p>6.如果以上步骤还是不能解决问题，就只好去stackoverflow上提问了，上面有很多热心的人，一定可以找到解决问题的办法。</p>
 
       
     </div>
@@ -284,18 +258,9 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/08/30/ruby on rails tutorial学习之搭建Heroku部署环境/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          ruby on rails tutorial学习之搭建Heroku部署环境
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/08/29/Rails学习之carrierwave图片上传/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Rails学习之carrierwave图片上传</div>
+    <a href="/2016/09/01/rails邮件功能实现/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">rails邮件功能实现</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -330,7 +295,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="ruby on rails tutorial学习之github常用命令" data-title="ruby on rails tutorial学习之github常用命令" data-url="https://lily-xue.github.io/2016/08/30/ruby on rails tutorial学习之github常用命令/"></div>
+	<div class="ds-thread" data-thread-key="CGC初学者debug心得" data-title="CGC初学者debug心得" data-url="https://lily-xue.github.io/2016/09/28/CGC初学者debug心得/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
