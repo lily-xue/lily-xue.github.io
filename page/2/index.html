@@ -79,7 +79,7 @@
 						<li>Links</li>
 						
 						
-						<li>About</li>
+						<li>Über</li>
 						
 					</ul>
 				</div>
@@ -201,6 +201,72 @@
 </nav>
 
       <div class="body-wrap">
+  
+    <article id="post-rails-学习笔记（一）" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/08/18/rails-学习笔记（一）/" class="article-date">
+  	<time datetime="2016-08-18T14:32:25.000Z" itemprop="datePublished">2016-08-18</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/08/18/rails-学习笔记（一）/">rails 学习笔记（一）</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>rails学习了几天，很多内容比以前更加清晰，</p>
+<ul>
+<li>创建用户资源rails g model user username:string password_digest:string</li>
+<li>创建控制器rails g controller users new create</li>
+<li>使用脚手架创建模块和框架 rails g scaffold todo</li>
+<li>使用gem bcrypt加密密码</li>
+<li>登录功能使用session控制器，以下为对应的路由<ul>
+<li>get ‘/login’, to: ‘sessions#new’           # 获取登录表由</li>
+<li>post ‘/login’, to: ‘sessions#create’       # 登录路由</li>
+<li>delete ‘/logout’, to: ‘sessions#destroy’   # 登出路由</li>
+</ul>
+</li>
+<li>将user与todo关联rails g migration AddUserToTodos user:references（user_id:references 是说把 user_id 作为外键添加到 todo 表结构中）</li>
+</ul>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-写作与编程的相似之处" class="article article-type-post" itemscope itemprop="blogPost">
   
