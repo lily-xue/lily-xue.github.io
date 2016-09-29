@@ -4,20 +4,30 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>ruby on rails tutorial学习之github常用命令 | lilyxue的个人博客</title>
+  <title>rails应用——请假管理系统 | lilyxue的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="github使用时常用的一些命令在开发rails的过程中，经常会需要用到github管理自己的代码，学习git的一些常用命令，可以让我们更加高效地进行开发。">
+  <meta name="description" content="请假管理系统是自己做的一个简单的rails应用，具有账号注册、登录，新建账号，新建请假申请、管理员进行审批并发送邮件提醒等功能。
+
+请假管理系统的github地址
+请假管理系统的heroku体验地址
+功能说明：1.使用管理员账号登录系统，创建一个普通用户账号，需要保证普通用户账号可以接收到邮件。2.使用创建的普通用户账号登录请假管理系统，新建请假申请。3.管理员账号可以审批请假申请，新建和修改">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ruby on rails tutorial学习之github常用命令">
-<meta property="og:url" content="https://lily-xue.github.io/2016/08/30/ruby on rails tutorial学习之github常用命令/index.html">
+<meta property="og:title" content="rails应用——请假管理系统">
+<meta property="og:url" content="https://lily-xue.github.io/2016/09/29/rails应用——请假管理系统/index.html">
 <meta property="og:site_name" content="lilyxue的个人博客">
-<meta property="og:description" content="github使用时常用的一些命令在开发rails的过程中，经常会需要用到github管理自己的代码，学习git的一些常用命令，可以让我们更加高效地进行开发。">
-<meta property="og:image" content="http://lily-xue.github.io/img/tobranch.png">
-<meta property="og:updated_time" content="2016-08-30T13:16:42.894Z">
+<meta property="og:description" content="请假管理系统是自己做的一个简单的rails应用，具有账号注册、登录，新建账号，新建请假申请、管理员进行审批并发送邮件提醒等功能。
+
+请假管理系统的github地址
+请假管理系统的heroku体验地址
+功能说明：1.使用管理员账号登录系统，创建一个普通用户账号，需要保证普通用户账号可以接收到邮件。2.使用创建的普通用户账号登录请假管理系统，新建请假申请。3.管理员账号可以审批请假申请，新建和修改">
+<meta property="og:updated_time" content="2016-09-29T14:30:05.284Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ruby on rails tutorial学习之github常用命令">
-<meta name="twitter:description" content="github使用时常用的一些命令在开发rails的过程中，经常会需要用到github管理自己的代码，学习git的一些常用命令，可以让我们更加高效地进行开发。">
-<meta name="twitter:image" content="http://lily-xue.github.io/img/tobranch.png">
+<meta name="twitter:title" content="rails应用——请假管理系统">
+<meta name="twitter:description" content="请假管理系统是自己做的一个简单的rails应用，具有账号注册、登录，新建账号，新建请假申请、管理员进行审批并发送邮件提醒等功能。
+
+请假管理系统的github地址
+请假管理系统的heroku体验地址
+功能说明：1.使用管理员账号登录系统，创建一个普通用户账号，需要保证普通用户账号可以接收到邮件。2.使用创建的普通用户账号登录请假管理系统，新建请假申请。3.管理员账号可以审批请假申请，新建和修改">
   
     <link rel="alternative" href="/atom.xml" title="lilyxue的个人博客" type="application/atom+xml">
   
@@ -203,11 +213,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-ruby on rails tutorial学习之github常用命令" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-rails应用——请假管理系统" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/08/30/ruby on rails tutorial学习之github常用命令/" class="article-date">
-  	<time datetime="2016-08-30T14:32:25.000Z" itemprop="datePublished">2016-08-30</time>
+      <a href="/2016/09/29/rails应用——请假管理系统/" class="article-date">
+  	<time datetime="2016-09-29T14:17:43.000Z" itemprop="datePublished">2016-09-29</time>
 </a>
     </div>
   
@@ -220,7 +230,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      ruby on rails tutorial学习之github常用命令
+      rails应用——请假管理系统
     </h1>
   
 
@@ -236,43 +246,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="github使用时常用的一些命令"><a href="#github使用时常用的一些命令" class="headerlink" title="github使用时常用的一些命令"></a>github使用时常用的一些命令</h3><p>在开发rails的过程中，经常会需要用到github管理自己的代码，学习git的一些常用命令，可以让我们更加高效地进行开发。</p>
-<a id="more"></a>
-<p>1.首次安装git需要进行的系统设置</p>
-<p><code>git config –global user.name “your username”</code></p>
-<p><code>git config –global user.email “your email”</code></p>
-<p>2.然后运行git init进行仓库初始化，git默认跟踪所有文件的变化，但是在根目录下的.gitignore文件中记录的是git不需要跟踪的文件和目录。</p>
-<p>3.git的主要命令：</p>
+        <p>　　请假管理系统是自己做的一个简单的rails应用，具有账号注册、登录，新建账号，新建请假申请、管理员进行审批并发送邮件提醒等功能。</p>
 <ul>
-<li><p>git add . #将当前目录及其子目录下，所有改动且未提交的文件添加到git暂存区域中</p>
-</li>
-<li><p>git status #查看暂存区有哪些文件</p>
-</li>
-<li><p>git commit -m “your comment” #告知git保存改动（本地更改）</p>
-</li>
-<li><p>git push #将更改提交到远程仓库</p>
-</li>
-<li><p>git log #查看提交的历史信息</p>
-</li>
-<li><p>git checkout -f #切换到上一个提交记录来撤销本次改动</p>
-</li>
-<li><p>git remote add origin &lt;远程仓库地址&gt; #告知git添加仓库地址为代码的原本，代表本地的主分支</p>
-</li>
-<li><p>git push -u origin master #将本地仓库推送到github上</p>
-</li>
-<li><p>git checkout -b <branch-name> #新增一个分支，并切换到这个分支<br><img src="http://lily-xue.github.io/img/tobranch.png" alt="checkout branch"></branch-name></p>
-</li>
-<li><p>git branch #查看所有分支</p>
-</li>
-<li><p>git checkout master #切换到主分支</p>
-</li>
-<li><p>git merge <branch-name> #将<branch-name>这个分支的改动合并到主分支</branch-name></branch-name></p>
-</li>
-<li><p>git branch -d <branch-name>  #将<branch-name>这个分支删除</branch-name></branch-name></p>
-</li>
-<li><p>git checkout -D <branch-name> #放弃对从分支做的修改</branch-name></p>
-</li>
-<li><p>git push #将改动推送到github</p>
+<li>请假管理系统的<a href="git@github.com:lily-xue/my_app.git">github地址</a></li>
+<li><p>请假管理系统的<a href="https://safe-oasis-75462.herokuapp.com/login" target="_blank" rel="external">heroku体验地址</a></p>
+<p>功能说明：<br>1.使用管理员账号登录系统，创建一个普通用户账号，需要保证普通用户账号可以接收到邮件。<br>2.使用创建的普通用户账号登录请假管理系统，新建请假申请。<br>3.管理员账号可以审批请假申请，新建和修改请假申请的状态后，对应的账号可以收到邮件提醒。<br>4.请假申请状态改变后，只能修改备注，其他信息不能修改。</p>
 </li>
 </ul>
 
@@ -284,18 +262,9 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/08/31/ruby on rails tutorial学习之规划程序/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          ruby on rails tutorial学习之规划程序
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/08/30/ruby on rails tutorial学习之搭建Heroku部署环境/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">ruby on rails tutorial学习之搭建Heroku部署环境</div>
+    <a href="/2016/09/28/CGC给我开启了一个新的世界/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">CGC给我开启了一个新的世界</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -330,7 +299,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="ruby on rails tutorial学习之github常用命令" data-title="ruby on rails tutorial学习之github常用命令" data-url="https://lily-xue.github.io/2016/08/30/ruby on rails tutorial学习之github常用命令/"></div>
+	<div class="ds-thread" data-thread-key="rails应用——请假管理系统" data-title="rails应用——请假管理系统" data-url="https://lily-xue.github.io/2016/09/29/rails应用——请假管理系统/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
